@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cubes
   resources :hoges
   resources :games
   resources :books
