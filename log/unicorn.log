@@ -1,0 +1,59 @@
+I, [2017-02-20T02:27:12.662775 #1508]  INFO -- : Refreshing Gem list
+I, [2017-02-20T02:27:14.284260 #1508]  INFO -- : listening on addr=/tmp/unicorn.sock fd=13
+I, [2017-02-20T02:27:14.410985 #1517]  INFO -- : worker=0 ready
+I, [2017-02-20T02:27:14.413607 #1520]  INFO -- : worker=1 ready
+I, [2017-02-20T02:27:14.416129 #1523]  INFO -- : worker=2 ready
+I, [2017-02-20T02:27:14.417504 #1508]  INFO -- : master process ready
+I, [2017-02-20T02:27:22.876358 #1508]  INFO -- : reaped #<Process::Status: pid 1517 exit 0> worker=0
+I, [2017-02-20T02:27:22.979402 #1508]  INFO -- : reaped #<Process::Status: pid 1520 exit 0> worker=1
+I, [2017-02-20T02:27:22.979622 #1508]  INFO -- : reaped #<Process::Status: pid 1523 exit 0> worker=2
+I, [2017-02-20T02:27:22.979812 #1508]  INFO -- : master complete
+I, [2017-02-20T02:34:06.907119 #38]  INFO -- : Refreshing Gem list
+F, [2017-02-20T02:34:08.724798 #38] FATAL -- : error adding listener addr=/tmp/unicorn.sock
+/usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/socket_helper.rb:116:in `bind_listen': socket=/tmp/unicorn.sock specified but it is not a socket! (ArgumentError)
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:808:in `each'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:130:in `start'
+	from /usr/local/bundle/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/bundle/bin/unicorn:17:in `load'
+	from /usr/local/bundle/bin/unicorn:17:in `<main>'
+I, [2017-02-20T02:34:23.822981 #67]  INFO -- : Refreshing Gem list
+F, [2017-02-20T02:34:25.382765 #67] FATAL -- : error adding listener addr=/tmp/unicorn.sock
+/usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/socket_helper.rb:116:in `bind_listen': socket=/tmp/unicorn.sock specified but it is not a socket! (ArgumentError)
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:231:in `listen'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:808:in `block in bind_new_listeners!'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:808:in `each'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:808:in `bind_new_listeners!'
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:130:in `start'
+	from /usr/local/bundle/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/bundle/bin/unicorn:17:in `load'
+	from /usr/local/bundle/bin/unicorn:17:in `<main>'
+I, [2017-02-20T02:34:56.622954 #86]  INFO -- : Refreshing Gem list
+I, [2017-02-20T02:34:58.163292 #86]  INFO -- : listening on addr=/tmp/unicorn.sock fd=13
+I, [2017-02-20T02:34:58.298609 #95]  INFO -- : worker=0 ready
+I, [2017-02-20T02:34:58.301536 #86]  INFO -- : master process ready
+I, [2017-02-20T02:34:58.304272 #98]  INFO -- : worker=1 ready
+I, [2017-02-20T02:34:58.306539 #101]  INFO -- : worker=2 ready
+/usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:86 (or pid=/tmp/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/bundle/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:127:in `start'
+	from /usr/local/bundle/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/bundle/bin/unicorn:17:in `load'
+	from /usr/local/bundle/bin/unicorn:17:in `<main>'
+172.17.0.1 - - [20/Feb/2017:02:36:34 +0000] "GET / HTTP/1.0" 200 - 0.2652
+172.17.0.1 - - [20/Feb/2017:02:45:25 +0000] "GET / HTTP/1.0" 200 - 0.2586
+172.17.0.1 - - [20/Feb/2017:02:45:25 +0000] "GET / HTTP/1.0" 200 - 0.0203
+172.17.0.1 - - [20/Feb/2017:02:47:18 +0000] "GET / HTTP/1.0" 200 - 0.0136
+172.17.0.1 - - [20/Feb/2017:02:47:19 +0000] "GET / HTTP/1.0" 200 - 0.0190
+172.17.0.1 - - [20/Feb/2017:02:50:38 +0000] "GET /ideas HTTP/1.0" 500 54890 0.3169
+172.17.0.1 - - [20/Feb/2017:04:05:53 +0000] "GET / HTTP/1.0" 500 54674 0.1300
+172.17.0.1 - - [20/Feb/2017:04:05:54 +0000] "GET / HTTP/1.0" 500 54674 0.2818
+172.17.0.1 - - [20/Feb/2017:04:05:54 +0000] "GET / HTTP/1.0" 500 54669 0.3132
+172.17.0.1 - - [20/Feb/2017:04:05:54 +0000] "GET / HTTP/1.0" 500 54669 0.0968
+172.17.0.1 - - [20/Feb/2017:04:12:36 +0000] "GET / HTTP/1.0" 500 54674 0.1041
+172.17.0.1 - - [20/Feb/2017:04:12:43 +0000] "GET / HTTP/1.0" 500 54669 0.1024
+172.17.0.1 - - [20/Feb/2017:04:23:53 +0000] "GET / HTTP/1.0" 500 54674 0.1080
+172.17.0.1 - - [20/Feb/2017:04:23:53 +0000] "GET / HTTP/1.0" 500 54669 0.1865
+172.17.0.1 - - [20/Feb/2017:04:50:20 +0000] "GET / HTTP/1.0" 500 54674 0.1190
+172.17.0.1 - - [20/Feb/2017:04:50:28 +0000] "GET / HTTP/1.0" 500 54669 0.1143
