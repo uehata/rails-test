@@ -4,7 +4,7 @@ timeout 15
 preload_app true
 
 listen "/var/tmp/unicorn.sock"
-pid "/var/www/my_app_name/current/tmp/unicorn.pid"
+pid "/var/tmp/unicorn.pid"
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do
